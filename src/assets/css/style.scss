@@ -1,0 +1,68 @@
+@import 'config/colors';
+@import 'config/dimens';
+@import 'config/reset';
+@import 'config/normalize';
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.z-index-4 {
+    z-index: 4;
+}
+
+.z-index-6 {
+    z-index: 6;
+}
+
+.z-index-8 {
+    z-index: 8;
+}
+
+.z-index-max {
+    z-index: 9999999;
+}
+
+.iphonex-top {
+    padding-top: 44px !important;
+}
+
+.iphonex-bottom {
+    padding-bottom: 34px;
+}
+
+.border_1px {
+    position: relative;
+}
+
+.border_1px:before {
+    content: '';
+    position: absolute;
+    // top: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #e7e7e7;
+    transform-origin: 50% 0%;
+}
+.border_1px_top:before {
+    content: '';
+    position: absolute;
+     top: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #e7e7e7;
+    transform-origin: 50% 0%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2) {
+    .border_1px_top:before,.border_1px:before {
+        transform: scaleY(0.5);
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:3) {
+    .border_1px_top:before,.border_1px:before {
+        transform: scaleY(0.33);
+    }
+}
